@@ -1,0 +1,42 @@
+body {
+    background-color: rgb(240, 96, 96);
+}
+
+.display-4 {
+    color: snow;
+    font-size: 80px;
+   
+}
+.jumbotron {
+    padding: 2rem 1rem;
+    text-align: center;
+    font-size: 80px;
+    background-image: url(https://thumbs.gfycat.com/AdmiredImpressiveJohndory-max-1mb.gif);
+    border-radius: .3rem;
+    margin-left: 500px;
+    margin-right: 500px;
+}
+ul {
+    list-style-type: none;
+}
+
+.treat-options img {
+    height: 100px;
+    width: 100px;
+}
+
+.fire {
+    width: 240px;
+}
+h4 {
+    text-align: center;
+    border: solid black 1px;
+    margin-left: 20px;
+}
+#title {
+    text-align: center;
+    border: solid black 1px;
+}
+#photo {
+    border: solid yellow 1px;
+}

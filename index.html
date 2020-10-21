@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+		integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css">
+    <title>B(Earn) My Meal</title>
+</head>
+<body>
+     <!-- <header>B(Earn)</header> -->
+    <!-- <div class="container"> -->
+        <div class="jumbotron jumbotron-fluid">
+            <!-- <header class="container"> -->
+              <h1 class="display-4">B(Earn)</h1>                
+            <!-- </header> -->
+        </div>
+    <!-- <div class="container"> -->
+        <div class="row">
+            <div id="recipe-list" class="col-lg-2">
+                <sidebar><h4>Choose your Delight!</h4></sidebar>                
+                <ul>
+                  <div class="treat-options">
+                      <!-- buttons to call corresponding recipes -->
+                    <li id="op1"><button><img src="milkshake.png"></button><button id="op6"><img src="Pepperoni Slice.png"></button></li>
+                    <li id="op2"><button><img src="avocado-toast.png"></button><button id="op7"><img src="Caesar-Salad.png"></button></li>
+                    <li id="op3"><button><img src="Potato Chips.png"></button><button id="op8"><img src="Rice and Beans.png"></button></li>
+                    <li id="op4"><button><img src="Apple.png"></button><button id="op9"><img src="Grilled Cheese.png"></button></li>
+                    <li id="op5"><button><img src="Snickers.png"></button><button id="op10"><img src="Cheeseburger.png"></button></li>                 
+                  </div>                                       
+                </ul>
+            </div>
+                          
+            <div id="foods" class="col-lg-4">
+                <h2 id="title">First You Yearn!</h2>
+                <!-- recipe from API will append here -->
+                <div id="recipe-drop"></div>
+                <!-- placeholder image -->
+                <img id="photo" src="https://via.placeholder.com/620x500/000000/FFFFFF/?text=IPaddress.net"></a>
+            </div>
+            <div id="workout" class="col-lg-4">
+                <h2 id="title">Then You Burn!</h2>
+                <!-- workout from API will append here -->
+                <div id="workout-drop"></div>
+                <!-- placeholder image -->
+                <img id="photo" src="https://via.placeholder.com/620x500/000000/FFFFFF/?text=IPaddress.net"></a>
+            </div>
+            <div id="exercise-list" class="col-lg-2">
+                <sidebar><h4>Choose your Workout match!</h4></sidebar>                
+                <ul>
+                  <div class="workout-intensity">
+                      <br>
+                      <br>
+                      <!-- button to call 300 calorie workout -->
+                    <li id="cal"><button class="fire" id="fire300"><i class="fas fa-fire"></i>300 Calories</button1></li>
+                        <br>
+                        <br>
+                        <!-- button to call 500 calorie workout -->
+                    <li id="cal"><button class="fire" id="fire500"><i class="fas fa-fire"><i class="fas fa-fire"></i></i>500 Calories</button1></li>
+                        <br>
+                        <br>
+                        <!-- button to call 1000 calorie workout -->
+                    <li id="cal"><button class="fire" id="fire1000"><i class="fas fa-fire"><i class="fas fa-fire"></i><i class="fas fa-fire"></i></i>1000 Calories</button1></li>                      
+                  </div>                                       
+                </ul>
+            </div>
+
+        </div>
+        
+            
+           
+            
+        
+    </div>
+        
+
+    <!-- </div> -->
+    
+</body>
+</html>

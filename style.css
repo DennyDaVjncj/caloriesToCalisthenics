@@ -10,11 +10,12 @@ body {
 .jumbotron {
     padding: 2rem 1rem;
     text-align: center;
-    font-size: 80px;
+    /* font-size: 80px; */
     background-image: url(https://thumbs.gfycat.com/AdmiredImpressiveJohndory-max-1mb.gif);
     border-radius: .3rem;
-    margin-left: 500px;
-    margin-right: 500px;
+    margin-left: 10%;
+    margin-right: 10%;
+    /* margin: 10%; */
 }
 ul {
     list-style-type: none;
@@ -27,7 +28,7 @@ ul {
 
 .fire {
     width: 240px;
-}
+   }
 h4 {
     text-align: center;
     border: solid black 1px;
@@ -37,6 +38,30 @@ h4 {
     text-align: center;
     border: solid black 1px;
 }
-#photo {
-    border: solid yellow 1px;
+#clickBegin {
+    text-align: center;
+    margin-bottom: 3%;
 }
+
+#sidebar {  
+    text-align: center;
+    margin-left: 3%;
+    margin-right: 5%;
+    border: black solid 1px;
+    padding: 2px;
+    /* height: 500px; */
+    /* background-image: url(https://thumbs.gfycat.com/AdmiredImpressiveJohndory-max-1mb.gif); */
+} 
+#sidebar2 {  
+    text-align: center;
+    text-decoration: underline;
+    margin-left: 5%;
+    margin-right: 2%;
+    border: black solid 1px;
+    padding: 2px;
+    /* background-image: url(https://thumbs.gfycat.com/AdmiredImpressiveJohndory-max-1mb.gif); */
+}
+/* #running {
+    height: 50px;
+    width: 50px;
+} */

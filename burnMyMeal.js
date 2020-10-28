@@ -39,3 +39,37 @@ var settings = {
 $.ajax(settings).done(function (response) {
 	console.log(response);
 });
+
+//develop GET request ASAP!!!
+let tag=document.createElement('script');
+tag.src="https://www.youtube.com/iframe_api";
+let firstScriptTag=document.getElementsByTagName('script')[0];
+firstScriptTag.parentNode.insertBefore(tag,firstScriptTag);
+//need to attach functionality to user request
+let player;
+function onYouTubeIframeAPIReady(){
+  player=new YT.Player('player',{
+    height:'100%',
+    width:'100%',
+    videoId:'M7c1UVf-VE',
+    events:{
+      'onReady':onPlayerReady,
+      'onStateChange':onPlayerStateChange
+    }
+  })
+}
+function onPlayerReady(e){
+  e.target.playVideo();
+}
+let done=false;
+function onPlayerStateChange(e){
+  if(e.data==YT.PlayerState.PLAYING&&!done){
+    setTimeout(stopVideo,6000);
+    done=true;
+    //this function cuts off after 6 seconds of play time
+    //gonna do a lot of tinkering tomorrow for sure!
+  }
+}
+function stopVideo(){
+  player.stopVideo();
+}

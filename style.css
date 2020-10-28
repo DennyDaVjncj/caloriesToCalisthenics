@@ -61,6 +61,10 @@ h4 {
     padding: 2px;
     /* background-image: url(https://thumbs.gfycat.com/AdmiredImpressiveJohndory-max-1mb.gif); */
 }
+#player{
+    /* i want the iFrame player to appear on user request, and load new videos on request too */
+    display:
+}
 /* #running {
     height: 50px;
     width: 50px;

@@ -1,41 +1,34 @@
-// $(document).ready(function(){
-    // var instance = M.Carousel.init({
-    //     fullWidth: true,
-    //     indicators: true
-    //   });
-    //   // Or with jQuery
-    //   $('.carousel.carousel-slider').carousel({
-    //     fullWidth: true,
-    //     indicators: true
-    //   });
-    // function display(){
-      // var calorie300 = 300;
-      // var APIKey = "AIzaSyCg1nUbYturyaMWVeypxr6rMBs6i9HVN5I&q"   
-      // var queryURL = "https://www.googleapis.com/youtube/v3/search?key=AIzaSyCg1nUbYturyaMWVeypxr6rMBs6i9HVN5I&q=300calorieworkout"
-      //         $.ajax({
-      //           url: queryURL,
-      //           method: "GET"
-      //         }).then(function(response) {
-      //           console.log(response);
-      //         })
-      // }
-      // display();  
-// });
-
-// var cal300 = 100-300
-
-// basic api call for edamam api site 
-var settings = {
-	"async": true,
-	"crossDomain": true,
-	"url": "https://edamam-food-and-grocery-database.p.rapidapi.com/parser?ingr=brownies&calories=100-10000",
-	"method": "GET",
-	"headers": {
-		"x-rapidapi-host": "edamam-food-and-grocery-database.p.rapidapi.com",
-		"x-rapidapi-key": "29d4b4a7a3msh69d092a323b96fdp14da3ajsnfaf566370825"
-	}
-}
-
-$.ajax(settings).done(function (response) {
-	console.log(response);
+$(document).ready(function(){
+  var minCal = 100-300;
+  function getFood (calories){
+    var settings = {
+      "async": true,
+      "crossDomain": true,
+      "url": "https://api.edamam.com/search?app_id=868b7c06&app_key=952e33eb5cdae0482626e48f05b6ba1f&q=brownies&calories=100-1000",
+      "method": "GET",
+    }
+    $.ajax(
+      settings
+    ).then(function(response){
+      console.log(response)
+      $(response).each(function(i,calories){
+        $("#recipe-drop").append("<tr>")
+      .append($("<td>").text(response.hits[0].recipe.calories))
+      .append($("<td>").text(response.hits[0].recipe.dietLabels))
+      })
+    });
+  };
+//  $.ajax({
+//   settings
+//  })
+//  .then(function(response){
+//   $(response).each(function(i, recepie){
+//     // $("#recepie-drop").append($("<tr>").append($("<td>").append(recepie.)
+//   })
+//    $("#recepie-drop").recepie.text();
+// displayFood()
+//  })
+$(".fire").on("click",function(){
+getFood($(this).attr("data-calories"));
+});
 });

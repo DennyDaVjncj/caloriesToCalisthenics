@@ -32,3 +32,37 @@ $(".fire").on("click",function(){
 getFood($(this).attr("data-calories"));
 });
 });
+
+//programmatic iFrame player
+let tag=document.createElement('script');
+tag.src="https://www.youtube.com/iframe_api";
+let firstScriptTag=document.getElementsByTagName('script')[0];
+firstScriptTag.parentNode.insertBefore(tag,firstScriptTag);
+
+  let player;
+  function onYouTubeIframeAPIReady(){
+  player=new YT.Player('player',{
+    height:'100%',
+    width:'100%',
+    videoId:'M7lc1UVf-VE',
+    events:{
+      'onReady':onPlayerReady,
+      // 'onStateChange':onPlayerStateChange
+    }
+  })
+}
+function onPlayerReady(e){
+  e.target.playVideo();
+}
+//develop GET request ASAP!!!
+// $.ajax({
+//   url:queryURL,//HYPOTHETICAL
+//   method:"GET"
+// }).then(function(response){
+//   console.log(response);
+  //what do I want to happen after I fetch user request
+// })
+// $(".fire").on("click",function searchByKeyword{
+//   let results 
+// })
+

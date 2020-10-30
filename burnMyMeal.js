@@ -89,14 +89,6 @@ $(document).ready(function () {
     }
 
 
-
-
-
-
-
-
-
-
   $("#fire1000").on("click", function () {
     $( "#recipe-drop" ).empty();
     fire1000($(this).attr("data-calories"));

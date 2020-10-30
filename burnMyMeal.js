@@ -4,30 +4,34 @@ $(document).ready(function(){
     var settings = {
       "async": true,
       "crossDomain": true,
-      "url": "https://api.edamam.com/search?app_id=868b7c06&app_key=952e33eb5cdae0482626e48f05b6ba1f&q=brownies&calories=100-1000",
+      "url": "https://api.edamam.com/search?app_id=868b7c06&app_key=952e33eb5cdae0482626e48f05b6ba1f&q=desserts&calories=100-1000",
       "method": "GET",
     }
     $.ajax(
       settings
     ).then(function(response){
-      console.log(response)
-      $(response).each(function(i,calories){
-        $("#recipe-drop").append("<tr>")
-      .append($("<td>").text(response.hits[0].recipe.calories))
-      .append($("<td>").text(response.hits[0].recipe.dietLabels))
-      })
+      // console.log(response)
+      var calories = response.hits[0].recipe.calories;
+      console.log(calories)
+      var recipes = response.hits;
+      // console.log(recipes)
+      for (var i = 0; i < recipes.length; i++) {
+        var recipeObj = recipes[i]
+        // console.log(recipeObj)
+        $("<div>").addClass("card")
+        var rowDiv = $("<div>").addClass("row");
+        var colDiv = $("<div>").addClass("col s12 m6");
+        var cardDiv = $("<div>").addClass("card");
+        var cardImg = $("<img>").addClass("card-image").attr("src", recipeObj.recipe.image)
+        var card = rowDiv.append(colDiv, cardDiv, cardImg)
+        $("#recipe-drop").append(card)
+
+      };
+
+     
     });
   };
-//  $.ajax({
-//   settings
-//  })
-//  .then(function(response){
-//   $(response).each(function(i, recepie){
-//     // $("#recepie-drop").append($("<tr>").append($("<td>").append(recepie.)
-//   })
-//    $("#recepie-drop").recepie.text();
-// displayFood()
-//  })
+
 $(".fire").on("click",function(){
 getFood($(this).attr("data-calories"));
 });

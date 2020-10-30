@@ -99,18 +99,8 @@ $(document).ready(function () {
   }
 
   function fire1000(ten) {
-    
-    var name = response.hits[0].recipe.label;
-    console.log(name)
 
-    var calories = response.hits[0].recipe.calories;
-    console.log(calories);
-
-    var image = response.hits[0].recipe.image;
-    console.log(image);
-
-    var url = response.hits[0].recipe.url;
-    console.log(url);
+   
 
     var settings10 = {
       "async": true,
@@ -122,6 +112,17 @@ $(document).ready(function () {
     $.ajax(
       settings10
     ).then(function (response) {
+      var name = response.hits[0].recipe.label;
+      console.log(name)
+  
+      var calories = response.hits[0].recipe.calories;
+      console.log(calories);
+  
+      var image = response.hits[0].recipe.image;
+      console.log(image);
+  
+      var url = response.hits[0].recipe.url;
+      console.log(url);
       // console.log(response)
       var calories = response.hits[0].recipe.calories;
       console.log(calories)

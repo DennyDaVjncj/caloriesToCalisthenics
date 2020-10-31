@@ -59,7 +59,7 @@
     float: right;
 }
 h2 {
-    background-color: lawngreen;
+    /* background-color: lawngreen; */
     color: lightcoral;
 }
 /* .yearn {
@@ -68,3 +68,7 @@ h2 {
 .burn {
     float: right;
 } */
+#treat1 {
+    height: 300px;
+    width: 300px;
+}

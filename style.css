@@ -68,3 +68,19 @@ h2 {
 .burn {
     float: right;
 } */
+#player {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* width: 70px;
+    height: 300px;
+    border: 1px solid #c3c3c3; */
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+#recipe-drop {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

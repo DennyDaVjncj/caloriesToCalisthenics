@@ -1,20 +1,14 @@
-body {
-    background-color: rgb(240, 96, 96);
+.nav-wrapper {
+    background-color: black;
+    border: white solid 1px;
+}
+.fa-pulse {
+    color: firebrick;
 }
 
-.carousel {
-    background-color: rgb(189, 80, 180);
-}
-
-h2 {
-    background-color: lawngreen;
-    color: lightcoral;
-}
 .display-4 {
     color: snow;
-    font-size: 80px;
-  
-    
+    font-size: 80px; 
 }
 .jumbotron {
     padding: 2rem 1rem;
@@ -26,63 +20,51 @@ h2 {
     margin-right: 10%;
     /* margin: 10%; */
 }
-ul {
-    list-style-type: none;
-}
-
-.treat-options img {
-    height: 100px;
-    width: 100px;
-}
-
-.fire {
-    width: 240px;
+.btn {
+    background-color: rgb(189, 101, 72)
    }
-h4 {
-    text-align: center;
-    border: solid black 1px;
-    margin-left: 20px;
-}
-#title {
-    text-align: center;
-    border: solid black 1px;
-}
 #clickBegin {
     text-align: center;
     margin-bottom: 3%;
 }
-
-#sidebar {  
-    text-align: center;
-    margin-left: 3%;
-    margin-right: 5%;
-    border: black solid 1px;
-    padding: 2px;
-    /* height: 500px; */
-    /* background-image: url(https://thumbs.gfycat.com/AdmiredImpressiveJohndory-max-1mb.gif); */
-} 
-#sidebar2 {  
-    text-align: center;
-    text-decoration: underline;
-    margin-left: 5%;
-    margin-right: 2%;
-    border: black solid 1px;
-    padding: 2px;
-    /* background-image: url(https://thumbs.gfycat.com/AdmiredImpressiveJohndory-max-1mb.gif); */
+.modal-trigger {
+    margin-right: 45%;
+   margin-left: 45%;
+    margin-bottom: 2%;
 }
 
-#recipe-drop {
+.page-footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: black;
+    color: white;   
+ }
+
+ #foods {
 
     background-color: rgb(248, 205, 190);
-    text-decoration: lightcoral;
+    border: solid red 1px;
+    /* text-decoration: lightcoral; */
     text-align: center;
     text-size-adjust: 20pts ;
 }
-
-.btn {
- background-color: rgb(248, 222, 213)
+#workout {
+    background-color: rgb(248, 205, 190);
+    border: solid red 1px;
+    /* text-decoration: lightcoral; */
+    text-align: center;
+    text-size-adjust: 20pts ; 
+    float: right;
 }
-/* #running {
-    height: 50px;
-    width: 50px;
+h2 {
+    background-color: lawngreen;
+    color: lightcoral;
+}
+/* .yearn {
+   
+}
+.burn {
+    float: right;
 } */

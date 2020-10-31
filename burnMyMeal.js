@@ -4,7 +4,7 @@ $(document).ready(function () {
     var settings = {
       "async": true,
       "crossDomain": true,
-      "url": "https://api.edamam.com/search?q=sweets&app_id=bc8179cb&app_key=022c930d7b4fd86ded9d2a31ca7f7d9e&from=0&to=3&calories=301-500",
+      "url": "https://api.edamam.com/search?q=cooki&app_id=bc8179cb&app_key=022c930d7b4fd86ded9d2a31ca7f7d9e&from=0&to=3&calories=301-500",
       "method": "GET",
     }
     $.ajax(
@@ -32,16 +32,15 @@ $(document).ready(function () {
         $("<div>").addClass("card")
         var rowDiv = $("<div>").addClass("row");
         var colDiv = $("<div>").addClass("col s12 m6");
-        var headDiv = $("<h2>").addClass("heading");
+        var cardDiv = $("<div>").addClass("card");
         var cardDiv2 = $("<div>").addClass("card-image");
         var cardImg = $("<img>").addClass("card-image").attr("src", recipeObj.recipe.image);
-        // var cardUrl = $("<p>").addClass("recipe-link").attr("data-source", recipeObj.recipe.url);
+        var cardUrl = $("<p>").addClass("recipe-link").attr("data-source", recipeObj.recipe.url);
         var cardLabel = $("<span>").addClass("card-title").attr("href", url);
         var cardName = $("<span>").addClass("card-title").attr("data-name", name);
         var card = rowDiv.append(colDiv, cardDiv, cardDiv2, cardImg, name);
         var card2 = colDiv.append(calories);
-        var card3 = headDiv.append (name);
-        $("#recipe-drop").append(card, card2, card3);
+        $("#recipe-drop").append(card, card2);
 
         // $(".card").append(url);
 

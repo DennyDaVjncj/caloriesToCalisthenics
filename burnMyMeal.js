@@ -12,6 +12,7 @@ $(document).ready(function () {
     ).then(function (response) {
       // console.log(response)
 
+
       var name = response.hits[0].recipe.label;
       console.log(name)
 
@@ -41,6 +42,13 @@ $(document).ready(function () {
         var card = rowDiv.append(colDiv, cardDiv, cardDiv2, cardImg, name);
         var card2 = colDiv.append(calories);
         $("#recipe-drop").append(card, card2);
+
+        $("#apiFulFill").on("click", function () {
+          let qURL = "https://www.youtube.com/watch?v=" + "M7lc1UVf-VE";
+
+
+        })
+
 
         // $(".card").append(url);
 
@@ -100,7 +108,7 @@ $(document).ready(function () {
 
   function fire1000(ten) {
 
-   
+
 
     var settings10 = {
       "async": true,
@@ -114,13 +122,13 @@ $(document).ready(function () {
     ).then(function (response) {
       var name = response.hits[0].recipe.label;
       console.log(name)
-  
+
       var calories = response.hits[0].recipe.calories;
       console.log(calories);
-  
+
       var image = response.hits[0].recipe.image;
       console.log(image);
-  
+
       var url = response.hits[0].recipe.url;
       console.log(url);
       // console.log(response)
@@ -150,57 +158,69 @@ $(document).ready(function () {
     });
   }
 
-
-  // //programmatic iFrame player
-  // let tag=document.createElement('script');
-  // tag.src="https://www.youtube.com/iframe_api";
-  // let firstScriptTag=document.getElementsByTagName('script')[0];
-  // firstScriptTag.parentNode.insertBefore(tag,firstScriptTag);
-
-  //   let player;
-  //   function onYouTubeIframeAPIReady(){
-  //   player=new YT.Player('player',{
-  //     height:'100%',
-  //     width:'100%',
-  //     videoId:'M7lc1UVf-VE',
-  //     events:{
-  //       'onReady':onPlayerReady,
-  //       // 'onStateChange':onPlayerStateChange
-  //     }
-  //   })
-  // }
-  // function onPlayerReady(e){
-  //   e.target.playVideo();
-
-  // develop GET request ASAP!!!
-  // $.ajax({
-  //   url:queryURL,//HYPOTHETICAL
-  //   method:"GET"
-  // }).then(function(response){
-  //   console.log(response);
-  //   what do I want to happen after I fetch user request
-  // })
-  // $(".fire").on("click",function searchByKeyword{
-  //   let results 
-  //  }
-  // })
-
   $("#fire300").on("click", function () {
+    insertIFrame(300);
     $("#recipe-drop").empty();
     fire300($(this).attr("data-calories"));
   });
 
   $("#fire500").on("click", function () {
+    insertIFrame(500);
     $("#recipe-drop").empty();
     fire500($(this).attr("data-calories"));
   });
 
   $("#fire1000").on("click", function () {
+    insertIFrame(1000);
     $("#recipe-drop").empty();
     fire1000($(this).attr("data-calories"));
   });
 
+  // function vidCall(){
+  //   ;
+  //   qUrl+specific
+  // }
+
 })
 
-    // modal trigger
-    $('.modal').modal();
+// modal trigger
+$('.modal').modal();
+
+let videoId = "";
+// this happens on click and takes in either calories === 300 or 500 or 1000, based on which button you clicked
+function insertIFrame(calories) {
+  console.log(calories);
+  // this is where you change the videoId based on the calories number
+  // videoId is a global variable so when onYouTubeIframeAPIReady() runs, videoId will be different depending on the button you clicked on 
+  if (calories === 300) {
+    videoId = "M7lc1UVf-VE";
+  } else if (calories === 500) {
+    videoId ="M7lc1UVf-VE";
+  } else if (calories === 1000) {
+    videoId = "M7lc1UVf-VE";
+  }
+  
+  //programmatic iFrame player
+  var tag = document.createElement('script');
+
+  tag.src = "https://www.youtube.com/iframe_api";
+  var firstScriptTag = document.getElementsByTagName('script')[0];
+  firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+}
+
+var player;
+function onYouTubeIframeAPIReady() {
+  player = new YT.Player('player', {
+    height: '390',
+    width: '640',
+    videoId,//shortcut for videoId: videoId,
+    events: {
+      'onReady': onPlayerReady,
+      //'onStateChange': onPlayerStateChange
+    }
+  });
+}
+
+function onPlayerReady(event) {
+  event.target.playVideo();
+}

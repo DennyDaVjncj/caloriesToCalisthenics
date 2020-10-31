@@ -46,7 +46,14 @@ $(document).ready(function () {
 $(".fire").on("click",function(){
 getFood($(this).attr("data-calories"));
 //three functions to fire
-
+$.ajax({
+  url:"",
+  method:"GET"
+}).then(function(response){
+  console.log(response);
+  let userClick=$(this).val()
+  if()
+})
 });
 });
 
@@ -81,3 +88,7 @@ firstScriptTag.parentNode.insertBefore(tag,firstScriptTag);
 function onPlayerReady(e){
   e.target.playVideo();
 }
+
+// function response(res){
+//   for(let i=0;i<res)
+// }

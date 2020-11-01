@@ -11,6 +11,6 @@ As a fitness foodie
 I want to be able to maintain my fitness lifestyle
 So that I can still indulge in delicious desserts
 
-
+![Screenshot (162)](https://user-images.githubusercontent.com/62162419/97794145-8b57d680-1bcc-11eb-82e6-a2d8e7d6fd61.png)
 
 

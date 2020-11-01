@@ -193,13 +193,15 @@ function insertIFrame(calories) {
   // this is where you change the videoId based on the calories number
   // videoId is a global variable so when onYouTubeIframeAPIReady() runs, videoId will be different depending on the button you clicked on 
   if (calories === 300) {
-    videoId = "M7lc1UVf-VE";
+    videoId = "";
   } else if (calories === 500) {
-    videoId ="M7lc1UVf-VE";
+    videoId ="";
   } else if (calories === 1000) {
-    videoId = "M7lc1UVf-VE";
+    videoId = "";
   }
+  //ajax call needs configuring!!!!!!!!!!!!!!!!!!!!
   
+
   //programmatic iFrame player
   var tag = document.createElement('script');
 

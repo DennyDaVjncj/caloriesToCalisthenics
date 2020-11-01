@@ -56,7 +56,7 @@
     /* text-decoration: lightcoral; */
     text-align: center;
     text-size-adjust: 20pts ; 
-    float: right;
+    float: right;    
 }
 h2 {
     /* background-color: lawngreen; */
@@ -68,3 +68,6 @@ h2 {
 .burn {
     float: right;
 } */
+footer{
+    height:30px;
+}

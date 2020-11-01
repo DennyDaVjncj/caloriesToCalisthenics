@@ -1,4 +1,5 @@
 # b(Earn) My Meal
-User will select a calorie count from set options: 300, 500 or 1000
+upon arriving on client, user will be able to click open an introductory modal. Then user will progress to selecting a desired snack of 3 choices: cookie, cake or brownie
+in conjuction they'll receive a workout according to their chosen treat! relative to this app, we aimed at providing a fully dynamic experience & it seems we were able to deliver on that, although there is of course room for development...
 
-In conjuction they'll receive a recipe matching the selected calorie count plus a workout video to offset calories consumed!
+

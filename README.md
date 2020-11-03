@@ -2,14 +2,14 @@
  
 --MUSTREFRESH TO GET EACH CLICK SPECIFIC VIDEO, UPDATES ARE EN ROUTE! 
 
-upon arriving on client, user will be able to click open an introductory modal. user will then progress to selecting a desired treat of 3 choices: cookies, cake or brownies
+Upon arriving on client, user will be able to click open an introductory modal. user will then progress to selecting a desired treat of 3 choices: cookies, cake or brownies
 
-in conjuction they'll receive a workout according to their selection! with this app we aimed at providing a fully dynamic experience & it seems we were able to deliver on that, although there is room for development...
+In conjuction they'll receive a workout according to their selection! with this app we aimed at providing a fully dynamic experience & it seems we were able to deliver on that, although there is room for development...
 
  USER STORY:
-as a fitness foodie
+As a fitness foodie
 I want to be able to maintain my fitness lifestyle
-so that I can still indulge in delicious desserts
+So that I can still indulge in delicious desserts
 
 #preClick
 ![Screenshot (165)](https://user-images.githubusercontent.com/62162419/97796152-f0b7c180-1be4-11eb-990b-c1fcc6dfc8d0.png)

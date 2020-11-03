@@ -9,7 +9,7 @@ In conjuction they'll receive a workout according to their selection! with this 
  USER STORY:
 As a fitness foodie
 I want to be able to maintain my fitness lifestyle
-So that I can still indulge in delicious desserts
+so that I can still indulge in delicious desserts
 
 #preClick
 ![Screenshot (165)](https://user-images.githubusercontent.com/62162419/97796152-f0b7c180-1be4-11eb-990b-c1fcc6dfc8d0.png)

@@ -1,4 +1,4 @@
-# caloriesToCalisthenics: https://dennydavjncj.github.io/b-Earn-MyMeal/
+# caloriesToCalisthenics: 
  
 --MUSTREFRESH TO GET EACH CLICK SPECIFIC VIDEO, UPDATES ARE EN ROUTE! 
 
